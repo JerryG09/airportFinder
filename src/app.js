@@ -1,10 +1,10 @@
-const greeting = 'Hello World';
-console.log(greeting);
+// Search Airport
 
-const getData = async (url) => {
-  const response = await fetch(url);
-  const result = await response.json();
-  console.log(result);
-};
+const searchAirpot = document.getElementById("search");
 
-getData('https://jsonplaceholder.typicode.com/posts');
+// Add Event Listener
+searchAirpot.addEventListener("keyup", e => {
+  // Get User input
+  const term = e.target.value;
+  console.log(term);
+});
