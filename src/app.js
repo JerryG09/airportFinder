@@ -20,12 +20,12 @@ searchAirpot.addEventListener("keyup", e => {
 
     // SUCCESS we found some airport
     api.onSuccess = data => {
-      console.log(data);
+      ui.showResults(data);
     };
 
     // FAIL no airport found
     api.onError = data => {
-      console.log("onError", data.message);
+      console.log(data.message);
     };
   } else {
   }
